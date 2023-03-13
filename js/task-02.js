@@ -14,7 +14,7 @@ li.classList.add('item');
 li.textContent = ingredient;
 return li;
 });
-console.log('li');
+everyIngredients.append(...liElements);
 
 // Напиши скрипт, який для кожного елемента масиву ingredients:
 // Створить окремий елемент <li>. Обов'язково використовуй
