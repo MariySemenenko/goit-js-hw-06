@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 const everyIngredients = document.querySelector('#ingredients');
-
+//створюємо ноаий масив значень
 const liElements = ingredients.map((ingredient) => {
 const li = document.createElement('li');
 li.classList.add('item');
@@ -15,6 +15,7 @@ li.textContent = ingredient;
 return li;
 });
 everyIngredients.append(...liElements);
+console.log(everyIngredients);
 
 // Напиши скрипт, який для кожного елемента масиву ingredients:
 // Створить окремий елемент <li>. Обов'язково використовуй

@@ -22,3 +22,22 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery { 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* розміщую зображення в гнучкому контейнері,
+   який переносить їх на новий рядок при досягненні кінця контейнера */
+}
+
+.wrapper {
+  margin-bottom: 20px;
+  /* вертикальний відступ між зображеннями */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* для кожного зображення адаптивність */
+}
