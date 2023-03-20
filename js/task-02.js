@@ -9,11 +9,15 @@ const ingredients = [
 const everyIngredients = document.querySelector('#ingredients');
 //створюємо ноаий масив значень
 const liElements = ingredients.map((ingredient) => {
+  //створюю 'li'
 const li = document.createElement('li');
+//додаю до 'li' клас 'item'
 li.classList.add('item');
+//Додаю назву інгредієнта
 li.textContent = ingredient;
 return li;
 });
+//вставляю усі <li> за одну операцію
 everyIngredients.append(...liElements);
 console.log(everyIngredients);
 

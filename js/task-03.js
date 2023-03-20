@@ -12,6 +12,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
 const creatGalery = document.querySelector('.gallery');
 const imgGallery = images
 //створюємо новий масив значень
