@@ -12,10 +12,10 @@ dataDestroy.addEventListener('click', destroyBoxes);
 function inputCreate(amount) {
   
   let widthHeight = 30;
-  // Створюю рядок зі всіма боксом
+  // Створюю рядок зі всіма боксами
   let box = '';
   for (let i = 0; i < amount; i ++) {
- box += `<div width: "${widthHeight}px" height: "${widthHeight}px" style="background-color: ${getRandomHexColor()}"></div>`;
+    box += `<div style="width:${widthHeight}px; height:${widthHeight}px; background-color: ${getRandomHexColor()}"></div>`;
     widthHeight += 10;
   }
   // Вставляю рядок з боксами в контейнер

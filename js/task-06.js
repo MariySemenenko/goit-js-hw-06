@@ -11,10 +11,11 @@ function setOutput(event) {
 //     console.log(input.dataset.length);
     
 if(inputValue.length === Number(dataLength)) {//якщо довжина однакова з номером
-    
+    //якщо фокус в інпуті
     input.classList.add('valid');//то код правильний
      input.classList.remove('invalid');//після спрацювання видаляю
 } else {
+  //якщо фокус поза межами інпута запускається блюр
     input.classList.add('invalid');//в іншому випадку не правильний
      input.classList.remove('valid');
     // console.log(inputValue);
