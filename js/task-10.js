@@ -1,24 +1,25 @@
 //стукаю в html
-const input = document.querySelector('number');
+const input = document.querySelector('input[type="number"]');
 const dataCreate = document.querySelector('button[data-create]');
 const dataDestroy = document.querySelector('button[data-destroy]'); 
 const divBoxes = document.getElementById('boxes');
 
 
 //додаю слухача подій на create і destroy
-dataCreate.addEventListener('click', inputCreate);
+dataCreate.addEventListener('click', () => inputCreate(input.value));
 dataDestroy.addEventListener('click', destroyBoxes);
 
 function inputCreate(amount) {
+  
   let widthHeight = 30;
   // Створюю рядок зі всіма боксом
   let box = '';
   for (let i = 0; i < amount; i ++) {
- box += `<div wigth: "${widthHeight}px" height: "${widthHeight}px" style="background-color: ${getRandomHexColor()}"></div>`;
+ box += `<div width: "${widthHeight}px" height: "${widthHeight}px" style="background-color: ${getRandomHexColor()}"></div>`;
     widthHeight += 10;
   }
   // Вставляю рядок з боксами в контейнер
-  divBoxes.insertAdjacentElement('beforeend', box);
+  divBoxes.insertAdjacentHTML('beforeend', box);
 }
 
 
