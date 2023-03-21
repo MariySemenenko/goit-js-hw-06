@@ -1,8 +1,8 @@
 //стукаю в html
-const input = document.querySelector('#input');
+const input = document.querySelector('number');
 const dataCreate = document.querySelector('button[data-create]');
 const dataDestroy = document.querySelector('button[data-destroy]'); 
-const divBoxes = document.getElementById('#boxes');
+const divBoxes = document.getElementById('boxes');
 
 
 //додаю слухача подій на create і destroy
