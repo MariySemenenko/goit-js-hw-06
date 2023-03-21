@@ -9,7 +9,8 @@ button.addEventListener('click', () => {
   const getRandomHex = getRandomHexColor();
   //задаю background-color body
  body.style.backgroundColor = getRandomHex;
-  p.textContent = randomColor;
+ //додаю через стилі випадковий колір
+  p.textContent = getRandomHex;
 });
 
 function getRandomHexColor() {

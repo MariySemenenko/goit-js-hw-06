@@ -8,7 +8,7 @@ function changeText(event) {
     
     inputText.style.fontSize = inputControl.value + 'px';//змінюємо у текста колір
     
-    console.log(inputText);//значення font-size у консолі міняється
+    // console.log(inputText);console для себе (значення font-size у консолі міняється)
 }
 
 

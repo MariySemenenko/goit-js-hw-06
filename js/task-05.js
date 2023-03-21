@@ -8,10 +8,12 @@ nameInput.addEventListener("input", handleSubmit);
 function handleSubmit(event) {
  //в target записуємо елемент який активував подію  
     const name = event.target.value;
-    console.log(name);
+    // console.log(name);
     if(name) {
+      //якщо не порожній
       nameOutput.textContent = name;
     } else {
+      //якщо порожній
         nameOutput.textContent = 'Anonymous';
       }  
       

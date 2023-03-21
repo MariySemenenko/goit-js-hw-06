@@ -5,19 +5,19 @@ const input = document.querySelector('#validation-input');
 input.addEventListener("blur", setOutput);
 function setOutput(event) {
     const inputValue = event.target.value; //отримати посилання на елемент на якому є подія blur
-    console.log(inputValue);
-  const dataLength = event.target.dataset.length;
-  console.log(dataLength);
-    console.log(input.dataset.length);
+    // console.log(inputValue);
+  const dataLength = event.target.dataset.length;//отримати довжину
+//   console.log(dataLength);
+//     console.log(input.dataset.length);
     
-if(inputValue.length === Number(dataLength)) {
+if(inputValue.length === Number(dataLength)) {//якщо довжина однакова з номером
     
-    input.classList.add('valid');
-     input.classList.remove('invalid');
+    input.classList.add('valid');//то код правильний
+     input.classList.remove('invalid');//після спрацювання видаляю
 } else {
-    input.classList.add('invalid');
+    input.classList.add('invalid');//в іншому випадку не правильний
      input.classList.remove('valid');
-    console.log(inputValue);
+    // console.log(inputValue);
 }
 };
 //Треба рахувати довжину цього value і порівнювати з довжиною, що вказана в дата-
